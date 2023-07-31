@@ -12,7 +12,7 @@ import (
 
 func MongoConnection() *mongo.Client {
 
-	uri := "mongodb+srv://development:sake@sake.mqjgftx.mongodb.net/?retryWrites=true&w=majority" // change it in future (use ENV)
+	uri := "" // change it in future (use ENV)
 	fmt.Println(uri)
 	client, err := mongo.NewClient(options.Client().ApplyURI(uri))
 	if err != nil {
